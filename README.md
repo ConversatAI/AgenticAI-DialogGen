@@ -1,11 +1,12 @@
 <h1 align="center">  
-AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Short- and Long-term Memories of LLMs
+AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Short- and Long-Term Memories of LLMs
 </h1>  
 
 
 ## **TopicGuidedChat (TGC) Dataset — Sample Release**
 
-This repository contains a sample version of the TopicGuidedChat (TGC) dataset generated via the AgenticAI-DialogGen framework described in our paper* entitled, “AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Long-term Memory of LLMs”. The TGC dataset is a large-scale synthetic benchmark derived from the [Multi-Session Chat (MSC) dataset](https://aclanthology.org/2022.acl-long.356/) and is designed to support research on fine-tuning and evaluating the long-term memory of LLMs.
+This repository contains a sample version of the TopicGuidedChat (TGC) dataset generated via the AgenticAI-DialogGen framework described in our paper* entitled, “AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Short- and Long-Term Memories of LLMs
+”. The TGC dataset is a large-scale synthetic benchmark derived from the [Multi-Session Chat (MSC) dataset](https://aclanthology.org/2022.acl-long.356/) and is designed to support research on fine-tuning and evaluating the short- and long-term memories of LLMs.
 
 ## **Publication Status**
 
@@ -293,7 +294,7 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "speaker": "speaker1",
-          "text": "I'll have to look into some citrus-based marinades. They could really enhance the flavors of the prime rib.",
+          "text": "I'll have to look into some citrus-based marinades. Citrus flavors usually give that tangy taste. They could really enhance the flavors of the prime rib",
           "turn_number": 23
         },
         {
@@ -308,7 +309,7 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "speaker": "speaker2",
-          "text": "I'm sure it'll be a fantastic combination! Citrus and rich meats often create a delightful balance.",
+          "text": "I'm sure it'll be a fantastic combination!",
           "turn_number": 26
         },
         {
@@ -376,13 +377,13 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "question_id": 9,
-          "question": "Did I make the jerk chicken spicy?",
-          "answer": "Yes"
+          "question": "Do I like trying something special with meat?",
+          "answer": "Yes" 
         },
         {
           "question_id": 10,
-          "question": "What side dish was suggested to pair with jerk chicken?",
-          "answer": "Mac n' cheese"
+          "question": "Did I enjoy the jerk chicken recipe I tried?",
+          "answer": "Yes"
         },
         {
           "question_id": 11,
@@ -391,8 +392,8 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "question_id": 12,
-          "question": "What kind of marinade was suggested for prime rib?",
-          "answer": "Citrus-based"
+          "question": "Do I get bored of preparing meat?",
+          "answer": "No"
         },
         {
           "question_id": 13,
@@ -401,8 +402,8 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "question_id": 14,
-          "question": "What does my wife enjoy making with chicken?",
-          "answer": "Thai chicken"
+          "question": "Who usually leads the cooking experiments at home?",
+          "answer": "Your wife"
         },
         {
           "question_id": 15,
@@ -421,8 +422,8 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
         },
         {
           "question_id": 18,
-          "question": "What did I recently try that was tasty?",
-          "answer": "Jerk chicken"
+          "question": "Did I make the jerk chicken spicy?",
+          "answer": "Yes"
         },
         {
           "question_id": 19,
@@ -437,203 +438,203 @@ Below is a snippet showing the dataset structure for a **single topic** with **s
 
 "msc_turns": [
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Hi, how are you doing? I'm getting ready to do some cheetah chasing to stay in shape."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "You must be very fast. Hunting is one of my favorite hobbies."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I am! For my hobby I like to do canning or some whittling."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "I also remodel homes when I am not out bow hunting."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "That's neat. When I was in high school I placed 6th in 100m dash!"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "That's awesome. Do you have a favorite season or time of year?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I do not. But I do have a favorite meat since that is all I eat exclusively."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "What is your favorite meat to eat?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I would have to say its prime rib. Do you have any favorite foods?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "I like chicken or macaroni and cheese."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Do you have anything planned for today? I think I am going to do some canning."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "I am going to watch football. What are you canning?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I think I will can some jam. Do you also play footfall for fun?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "If I have time outside of hunting and remodeling homes. Which is not much!"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker1",
                 "text": "Did you get to do any bow hunting lately?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "No, the weather was poor, hoping to reschedule for another weekend. What have you been up to lately? How is running going?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Running is going fine. I am preparing for the marathon currently. This will be my first marathon so need to really prepare."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "What time are you setting for your goal?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "As it's my first, anything below 4 hours I will be happy with. What animals did you go hunting for so far?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Mostly just deer. We have been trying to get an Elk tag, but no luck yet. Do you like deer meat?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Unfortunately I never had that in my life. But would love to try. How about you? Do you like it?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "It makes good jerky, but not my favorite. What are you favorite meals?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I love meat, that's my favourite food. My wife likes chicken so it's mostly chicken in the house. My wife's recipe, thai chicken with rice is fantastic. What about you? What's your favourite food?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Yah, chicken is a staple with us as well. My favorite is jerk chick with red beans and rice. I'm also a big fan of mac n' cheese. How frequently do you cook?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I cook only during weekends, no energy left after work. But my wife cooks almost every day. You need to send me the recipe for jerk chicken."
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "For sure, it's a great recipe and very easy. "
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I tried that jerk chicken recipe you sent me, it was very good! "
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Glad to hear! If youre running low on deer I can bring you some more. Also I'm planning to finally hunt for elk this weekend maybe I can bring some of that too."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "That sounds awesome, I do love to eat a lot of meat! Wife wants to try making jerk prime rib, which I think would be pure awesome"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "That sounds like heaven! Have you hit a new PR for running recently?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Not recently, I've had to take a pause on my running. I slipped and broke my ankle 5 days ago :("
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Oh no that's horrible how long do they think you'll be out for?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I was told 4-6 weeks to recover, but that's ok, I can get some whittling done without having to move around much. Carve up a few figurines :) "
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "That's not too bad still unfortunate though. Perks of having multiple hobbies for sure!"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Indeed! Wife said thank you for the mac and cheese too, she said it was better than hers!"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "She is so kind haha I can send the recipe over if she'd like."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I'll let her know, she'll love it!"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Great! Are you taking any time off work since you broke your ankle?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "It's hard to get around the house with a broken ankle!"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "How long has it been broken? I broke my leg once a long time ago during the winter. It took forever to heal and the ice was a pain!"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Almost a week! It hurts so bad! Really? How did you broke your leg?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "I fell down the steps at church one icy Sunday. Thankfully it healed up but getting groceries by bus is a pain. "
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Oh! Well I think I´m going to the doctor tomorrow to see if my ankle is better "
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "How badly did you break it? Usually they take a while to heal. "
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Basically my ankle is an smashed cookie right now. So yeah... it´s really bad"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Did they think you were going to need surgery? I hope it heals ok for you. Are you planning any new whittling projects while you're laid up?"
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "Yes! But my doctor wanted to wait a week until my ankle is okay for a surgery. Really no I´m not a good planner, what do you recommend me to do?"
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "I haven't whittled in a while. The last thing I made was a plain wooden cross for my home. Do you have a favorite thing to make? I'm working on a set of raised planters for my garden."
             },
             {
-                "user_id": "032bbc38",
+                "user_id": "speaker1",
                 "text": "I love to make boats.  "
             },
             {
-                "user_id": "63786412",
+                "user_id": "speaker2",
                 "text": "Maybe you should start a model boat kit? I love to build things. I think that I usually make functional things. I always wanted to know how to build a full size sailboat by hand."
             }
         ]
