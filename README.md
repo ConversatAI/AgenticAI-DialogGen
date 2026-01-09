@@ -1,12 +1,11 @@
 <h1 align="center">  
-AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Short- and Long-Term Memories of LLMs
+AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-Tuning and Evaluating Short- and Long-Term Memories of LLMs
 </h1>  
 
 
 ## **TopicGuidedChat (TGC) Dataset — Sample Release**
 
-This repository contains a sample version of the TopicGuidedChat (TGC) dataset generated via the AgenticAI-DialogGen framework described in our paper* entitled, “AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-tuning and Evaluating Short- and Long-Term Memories of LLMs
-”. The TGC dataset is a large-scale synthetic benchmark derived from the [Multi-Session Chat (MSC) dataset](https://aclanthology.org/2022.acl-long.356/) and is designed to support research on fine-tuning and evaluating the short- and long-term memories of LLMs.
+This repository contains a sample version of the TopicGuidedChat (TGC) dataset generated via the AgenticAI-DialogGen framework described in our paper* entitled, “AgenticAI-DialogGen: Topic-guided Conversation Generation for Fine-Tuning and Evaluating Short- and Long-Term Memories of LLMs”. The TGC dataset is a large-scale synthetic benchmark derived from the [Multi-Session Chat (MSC) dataset](https://aclanthology.org/2022.acl-long.356/) and is designed to support research on fine-tuning and evaluating the short- and long-term memories of LLMs.
 
 ## **Publication Status**
 
@@ -19,8 +18,8 @@ Conversations are organized by topics, thereby enabling precise modeling of topi
 
 For each speaker pair, the dataset includes:
 -  Up to 3 topics.
--  AVG 30 conversational turns for each topic as short-term memory.
 -  Speaker-specific knowledge graphs as long-term memory derived from MSC dataset conversations.
+-  AVG 30 conversational turns for each topic as short-term memory.
 -  20 Memory-grounded QA pairs per topic probing both short- and long-term memory.
 
 At full scale, the dataset comprises:
